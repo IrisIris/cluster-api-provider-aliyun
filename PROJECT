@@ -1,0 +1,10 @@
+domain: cluster.k8s.io
+repo: github.com/IrisIris/cluster-api-provider-aliyun
+resources:
+- group: ack
+  kind: ACKMachine
+  version: v1alpha3
+- group: ack
+  kind: ACKCluster
+  version: v1alpha3
+version: "2"

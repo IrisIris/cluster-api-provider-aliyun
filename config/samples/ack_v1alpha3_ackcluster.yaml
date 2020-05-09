@@ -1,0 +1,7 @@
+apiVersion: ack.cluster.k8s.io/v1alpha3
+kind: ACKCluster
+metadata:
+  name: ackcluster-sample
+spec:
+  # Add fields here
+  foo: bar

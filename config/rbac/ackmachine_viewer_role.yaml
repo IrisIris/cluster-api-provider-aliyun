@@ -1,0 +1,20 @@
+# permissions for end users to view ackmachines.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ackmachine-viewer-role
+rules:
+- apiGroups:
+  - ack.cluster.k8s.io
+  resources:
+  - ackmachines
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ack.cluster.k8s.io
+  resources:
+  - ackmachines/status
+  verbs:
+  - get
